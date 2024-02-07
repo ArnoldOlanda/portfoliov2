@@ -1,0 +1,19 @@
+---
+interface Props {
+ text: string;
+}
+
+const { text } = Astro.props;
+---
+
+<li
+ class="bg-gray-800 group relative border-0 w-14 h-14 flex justify-center items-center rounded-full transition-all duration-300 hover:bg-blue-400"
+>
+ <div class="">
+  <slot class="z-10" />
+  <span
+   class="absolute right-0 top-0 bg-blue-400 pl-6 pr-8 h-full opacity-0 group-hover:-translate-x-6 group-hover:opacity-100 group-hover:rounded-r-none transition-all duration-300 flex justify-center items-center rounded-full -z-10"
+   >{text}</span
+  >
+ </div>
+</li>

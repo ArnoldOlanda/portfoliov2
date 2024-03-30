@@ -1,63 +1,58 @@
 ---
-import Layout from "../layouts/Layout.astro";
 ---
 
-<div id="HOME" class="flex gap-8 h-screen p-4 justify-center items-center">
-    <div class="h-full w-[20%] bg-blue-600 polygon fixed top-0 left-0 z-1">
-    </div>
+
+  <div class="flex gap-8 h-screen p-4 justify-center items-center">
+   
     <div
-        class="w-[30%] h-[80%] bg-gray-700 z-10 flex justify-center rounded-3xl overflow-hidden"
+      class="w-[30%] h-[80%] bg-gray-700 z-10 flex justify-center rounded-3xl overflow-hidden"
     >
-        <img
-            src="https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-            class="w-[100%] h-[100%] object-cover"
-            alt=""
-        />
+      <img
+        src="https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        class="w-[100%] h-[100%] object-cover"
+        alt=""
+      />
     </div>
 
     <div
-        class="w-[55%] h-[80%] z-10 px-40 flex flex-col items-center justify-center"
+      class="w-[55%] h-[80%] z-10 px-40 flex flex-col items-center justify-center"
     >
-        <div class="flex flex-nowrap items-center gap-4">
-            <div class="bg-blue-400 w-8 h-1 rounded-full"></div>
-            <h1 class="text-blue-400 text-5xl font-bold">HI! I'M ARNOLD</h1>
-        </div>
-        <h3 class="text-5xl font-bold mb-8">WEB DEVELOPER</h3>
-        <p class="leading-loose">
-            Hello, my name is Arnold and I'm a Javascript Web developer. I've
-            been passionate about programming for 4 years, some of my hobbies
-            are reading, playing video games, watching anime and riding my bike.
-            I have done several projects both personal and for the university,
-            currently I have finished my degree in Systems Engineering and I am
-            looking for my first job. I consider myself a productive person who
-            is adaptable and eager to learn something new every day.
-        </p>
-        <div class="w-full flex justify-start mt-10">
-            <button
-                class="h-12 w-52 rounded-full border-blue-400 border-[1px] hover:bg-blue-400 transition-all flex justify-center items-center gap-2"
-            >
-                MORE ABOUT ME
-                <svg
-                    class="w-6 h-6text-white"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                >
-                    <path
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M19 12H5m14 0-4 4m4-4-4-4"></path>
-                </svg>
-            </button>
-        </div>
+      <div class="flex flex-nowrap items-center gap-4">
+        <div class="bg-blue-400 w-8 h-1 rounded-full"></div>
+        <h1 class="text-blue-400 text-5xl font-bold">HI! I'M ARNOLD</h1>
+      </div>
+      <h3 class="text-5xl font-bold mb-8">WEB DEVELOPER</h3>
+      <p class="leading-loose">
+        Hello, my name is Arnold and I'm a Javascript Web developer. I've been
+        passionate about programming for 4 years, some of my hobbies are
+        reading, playing video games, watching anime and riding my bike. I have
+        done several projects both personal and for the university, currently I
+        have finished my degree in Systems Engineering and I am looking for my
+        first job. I consider myself a productive person who is adaptable and
+        eager to learn something new every day.
+      </p>
+      <div class="w-full flex justify-start mt-10">
+        <button
+          class="h-12 w-52 rounded-full border-blue-400 border-[1px] hover:bg-blue-400 transition-all flex justify-center items-center gap-2"
+        >
+          MORE ABOUT ME
+          <svg
+            class="w-6 h-6text-white"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M19 12H5m14 0-4 4m4-4-4-4"></path>
+          </svg>
+        </button>
+      </div>
     </div>
-</div>
+  </div>
 
-<style scoped>
-    .polygon {
-        clip-path: polygon(0 0, 39% 0, 100% 100%, 0% 100%);
-    }
-</style>
+

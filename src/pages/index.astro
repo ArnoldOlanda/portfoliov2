@@ -1,14 +1,10 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Home from "./Home.astro";
-import About from "./About.astro";
+import Layout from '../layouts/Layout.astro';
+import Home from './home.astro';
 
 //react components
-import { Nav } from "../components/Nav.tsx";
 ---
 
 <Layout title="Artidev :)">
-    <Nav client:visible />
-    <Home />
-    <About />
+  <Home />
 </Layout>

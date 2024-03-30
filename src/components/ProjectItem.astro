@@ -1,0 +1,30 @@
+---
+interface Props {
+  id: number;
+  title: string;
+  img: string;
+}
+
+const { id, img, title } = Astro.props;
+---
+
+<a
+  class="relative overflow-hidden rounded-lg cursor-pointer z-30"
+  href={`/portfolio/${id}`}
+>
+  <div
+    class="flex w-[100%] h-[100%] hover:scale-[1.04] transition-transform z-10 relative duration-300"
+  >
+    <div
+      class="absolute w-[100%] h-[100%] bg-gray-900 opacity-0 hover:opacity-80 flex justify-center items-center transition-all duration-500"
+    >
+      <span class="text-xl font-extrabold">{title}</span>
+    </div>
+    <img
+      transition:name={`image${id}`}
+      class="w-[100%] h-[100%] hover:scale-[1.05] transition-transform duration-500 object-cover"
+      src={img}
+      alt={title}
+    />
+  </div>
+</a>

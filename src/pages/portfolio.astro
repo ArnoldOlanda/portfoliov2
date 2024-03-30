@@ -1,0 +1,23 @@
+---
+import ProjectItem from '../components/ProjectItem.astro';
+import { projectItems } from '../data/projectItems';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Portfolio :)">
+  <div class="relative h-screen flex flex-col items-center">
+    <div class="w-[60%] h-[10%] mt-32 mb-16 flex justify-center">
+      <h4 class="text-6xl font-extrabold">
+        MY <span class="text-blue-400">PORTFOLIO</span>
+      </h4>
+    </div>
+    <div class="grid w-[75%] grid-cols-3 gap-6 z-[20]">
+      {
+        projectItems.map((item, index) => (
+          <ProjectItem id={item.id} title={item.title} img={item.img} />
+        ))
+      }
+    </div>
+  </div>
+  
+</Layout>

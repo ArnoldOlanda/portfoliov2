@@ -32,11 +32,13 @@ const project = projectItems.find((project) => project.id === Number(id));
       <div class="p-2 w-[50%]">
         <h4 class="text-4xl">{project?.title}</h4>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-          aspernatur consequuntur eaque. Iure porro eveniet velit laudantium
-          officia perspiciatis quis molestias, ad magni sit ex, quae, labore
-          dolores distinctio! Suscipit?
+          {project?.description}
         </p>
+        <div class="mt-4">
+          {project?.tecnologies.map((tech) => (
+            <span class="mr-2 rounded bg-blue-400 px-2 py-1 text-white">{tech}</span>
+          ))}
+        </div>
       </div>
     </div>
   </div>

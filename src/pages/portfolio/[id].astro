@@ -19,8 +19,8 @@ const project = projectItems.find((project) => project.id === Number(id));
 ---
 
 <Layout2 title="Artidev :)">
-  <div class="w-[100%] h-screen flex justify-center pt-6">
-    <div class="w-[50%] h-[50%] flex items-center">
+  <div class="w-[100%] h-screen flex justify-center items-center">
+    <div class="w-[60%] h-[50%] flex items-center">
       <div class="w-[50%] p-2">
         <img
           transition:name={`image${project?.id}`}
@@ -28,15 +28,23 @@ const project = projectItems.find((project) => project.id === Number(id));
           alt=""
           class="w-[100%] h-[80%] rounded-md object-cover"
         />
+        <div class="flex justify-center mt-2">
+          <a href={project?.url} target="_blank" rel="noopener noreferrer" class="bg-blue-500/70 hover:bg-blue-500/90 text-white px-4 py-2 rounded-md transition-colors flex items-center gap-2">
+            Ver en Github
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="20px" height="20px" class="inline"><path fill="currentColor" d="M 25.980469 2.9902344 A 1.0001 1.0001 0 0 0 25.869141 3 L 20 3 A 1.0001 1.0001 0 1 0 20 5 L 23.585938 5 L 13.292969 15.292969 A 1.0001 1.0001 0 1 0 14.707031 16.707031 L 25 6.4140625 L 25 10 A 1.0001 1.0001 0 1 0 27 10 L 27 4.1269531 A 1.0001 1.0001 0 0 0 25.980469 2.9902344 z M 6 7 C 4.9069372 7 4 7.9069372 4 9 L 4 24 C 4 25.093063 4.9069372 26 6 26 L 21 26 C 22.093063 26 23 25.093063 23 24 L 23 14 L 23 11.421875 L 21 13.421875 L 21 16 L 21 24 L 6 24 L 6 9 L 14 9 L 16 9 L 16.578125 9 L 18.578125 7 L 16 7 L 14 7 L 6 7 z"/></svg>
+          </a>
+        </div>
       </div>
       <div class="p-2 w-[50%]">
         <h4 class="text-4xl">{project?.title}</h4>
-        <p>
+        <p class="my-6 text-neutral-500">
           {project?.description}
         </p>
-        <div class="mt-4">
+        <div class="mt-4 flex flex-wrap">
           {project?.tecnologies.map((tech) => (
-            <span class="mr-2 rounded bg-blue-400 px-2 py-1 text-white">{tech}</span>
+            <span class={`mr-2 px-4 py-1 rounded-full text-white mb-2 transition-transform hover:-translate-y-1 cursor-pointer ${tech.bgClass} border border-white/20`}>
+              {tech.name}
+            </span>
           ))}
         </div>
       </div>

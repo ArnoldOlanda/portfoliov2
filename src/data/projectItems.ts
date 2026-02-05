@@ -95,7 +95,7 @@ export const projectItems = [
   {
     id: 7,
     title: 'Library System App',
-    img: '/src/assets/library-system-app.png',
+    img: '/src/assets/library-system.png',
     description:
       'Sistema de gestión de librerias y utiles de escritorio desarrollado con Reactjs y Shadcn UI. Utiliza Tanstack Query para la gestión eficiente de datos en el frontend. El backend en Nestjs ofrece una arquitectura robusta y escalable, mientras que Zustand maneja el estado global de la aplicación de manera ligera. Redis se emplea para mejorar el rendimiento mediante caching, y PostgreSQL garantiza una gestión segura y eficiente de la base de datos. La aplicación permite gestionar inventarios, ventas, compras, punto de venta y reportes detallados',
     tecnologies: [

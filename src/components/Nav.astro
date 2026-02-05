@@ -1,11 +1,10 @@
 ---
-import { NavItem } from './NavItem';
 import { menuItems } from '../data/menuItems';
 ---
 
 <div class="flex flex-col gap-4 fixed right-4 top-[30%] z-50">
   {
-    menuItems.map((item, index) => (
+    menuItems.map((item) => (
       <a
         href={item.url}
         class=" nav-link bg-gray-800 group relative border-0 w-14 h-14 flex justify-center items-center rounded-full transition-all duration-300 hover:bg-blue-400"

@@ -23,7 +23,7 @@ const project = projectItems.find((project) => project.id === Number(id));
       <div class="w-[90%] md:w-[50%] p-2">
         <img
           transition:name={`image${project?.id}`}
-          src={project?.img}
+          src={project?.img.src}
           alt=""
           class="w-[100%] h-[80%] rounded-md object-cover"
         />

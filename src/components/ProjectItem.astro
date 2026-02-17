@@ -9,20 +9,20 @@ const { id, img, title } = Astro.props;
 ---
 
 <a
-  class="relative overflow-hidden rounded-lg cursor-pointer z-30"
+  class="relative z-30 cursor-pointer overflow-hidden rounded-lg"
   href={`/portfolio/${id}`}
 >
   <div
-    class="flex w-[100%] h-[100%] hover:scale-[1.04] transition-transform z-10 relative duration-300"
+    class="relative z-10 flex h-[100%] w-[100%] transition-transform duration-300 hover:scale-[1.04]"
   >
     <div
-      class="absolute w-[100%] h-[100%] bg-gray-900 opacity-0 hover:opacity-80 flex justify-center items-center transition-all duration-500"
+      class="absolute flex h-[100%] w-[100%] items-center justify-center bg-gray-900 opacity-0 transition-all duration-500 hover:opacity-80"
     >
       <span class="text-xl font-extrabold">{title}</span>
     </div>
     <img
       transition:name={`image${id}`}
-      class="w-[100%] h-[100%] hover:scale-[1.05] transition-transform duration-500 object-cover"
+      class="h-[100%] w-[100%] object-cover transition-transform duration-500 hover:scale-[1.05]"
       src={img}
       alt={title}
     />

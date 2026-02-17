@@ -6,8 +6,8 @@
 
 <script is:inline>
   function initParticles() {
-    if (typeof particlesJS !== 'undefined') {
-      particlesJS('particles-js', {
+    if (typeof particlesJS !== "undefined") {
+      particlesJS("particles-js", {
         particles: {
           number: {
             value: 6,
@@ -17,19 +17,19 @@
             },
           },
           color: {
-            value: '#292a2f',
+            value: "#292a2f",
           },
           shape: {
-            type: 'polygon',
+            type: "polygon",
             stroke: {
               width: 0,
-              color: '#000',
+              color: "#000",
             },
             polygon: {
               nb_sides: 6,
             },
             image: {
-              src: 'img/github.svg',
+              src: "img/github.svg",
               width: 100,
               height: 100,
             },
@@ -57,17 +57,17 @@
           line_linked: {
             enable: false,
             distance: 200,
-            color: '#ffffff',
+            color: "#ffffff",
             opacity: 1,
             width: 2,
           },
           move: {
             enable: true,
             speed: 8,
-            direction: 'none',
+            direction: "none",
             random: false,
             straight: false,
-            out_mode: 'out',
+            out_mode: "out",
             bounce: false,
             attract: {
               enable: false,
@@ -77,15 +77,15 @@
           },
         },
         interactivity: {
-          detect_on: 'canvas',
+          detect_on: "canvas",
           events: {
             onhover: {
               enable: false,
-              mode: 'bubble',
+              mode: "bubble",
             },
             onclick: {
               enable: false,
-              mode: 'push',
+              mode: "push",
             },
             resize: true,
           },
@@ -121,6 +121,6 @@
   }
 
   // Ejecutar al cargar la página y en cada transición
-  document.addEventListener('DOMContentLoaded', initParticles);
-  document.addEventListener('astro:page-load', initParticles);
+  document.addEventListener("DOMContentLoaded", initParticles);
+  document.addEventListener("astro:page-load", initParticles);
 </script>

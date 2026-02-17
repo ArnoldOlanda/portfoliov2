@@ -1,59 +1,63 @@
 ---
+
 ---
 
-
-  <div class="flex gap-8 h-screen p-4 justify-center items-center">
-   
-    <div
-      class="w-[30%] h-[80%] bg-gray-700 z-10 flex justify-center rounded-3xl overflow-hidden"
-    >
-      <img
-        src="https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-        class="w-[100%] h-[100%] object-cover"
-        alt=""
-      />
-    </div>
-
-    <div
-      class="w-[55%] h-[80%] z-10 px-40 flex flex-col items-center justify-center"
-    >
-      <div class="flex flex-nowrap items-center gap-4">
-        <div class="bg-blue-400 w-8 h-1 rounded-full"></div>
-        <h1 class="text-blue-400 text-5xl font-bold">¡HOLA! SOY ARNOLD</h1>
-      </div>
-      <h3 class="text-5xl font-bold mb-8">FULLSTACK DEVELOPER</h3>
-      <p class="leading-loose">
-        Hola, soy Arnold, desarrollador web Fullstack con 4 años de pasión por la programación. Graduado en Ingeniería de Sistemas, he desarrollado proyectos personales y universitarios que fortalecieron mi enfoque práctico y creativo. Soy productivo, adaptable y siempre estoy listo para asumir nuevos retos y seguir aprendiendo.
-      </p>
-      <div class="w-full flex justify-start mt-10">
-        <a
-          href="https://drive.google.com/file/d/1YxsFRl9ngMNnqXYPID1M9XNweiXYzIBm/view?usp=sharing"
-          target="_blank" 
-          rel="noopener noreferrer" 
-          class="h-12 w-52 rounded-full bg-blue-400 hover:bg-blue-500 transition-all font-bold flex justify-center items-center gap-2 mr-6"
-        >Ver currículum</a>
-        <a
-          href="/about"
-          class="h-12 w-52 rounded-full border-blue-400 border-[1px] hover:bg-blue-400 transition-all flex justify-center items-center gap-2"
-        >
-          Acerca de mí
-          <svg
-            class="w-6 h-6text-white"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M19 12H5m14 0-4 4m4-4-4-4"></path>
-          </svg>
-        </a>
-      </div>
-    </div>
+<div
+  class="flex h-screen flex-col items-center justify-center gap-8 p-4 md:flex-row"
+>
+  <div
+    class="z-10 mt-10 flex h-[30%] w-[80%] justify-center overflow-hidden rounded-3xl bg-gray-700 md:h-[80%] md:w-[30%]"
+  >
+    <img
+      src="https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+      class="h-[100%] w-[100%] object-cover"
+      alt=""
+    />
   </div>
 
-
+  <div
+    class="z-10 flex w-full flex-col items-center justify-center md:h-[80%] md:w-[55%] md:px-40"
+  >
+    <div class="flex flex-nowrap items-center gap-4">
+      <div class="h-1 w-8 rounded-full bg-blue-400"></div>
+      <h1 class="text-5xl font-bold text-blue-400">¡HOLA! SOY ARNOLD</h1>
+    </div>
+    <h3 class="mb-8 text-5xl font-bold">FULLSTACK DEVELOPER</h3>
+    <p class="leading-loose">
+      Hola, soy Arnold, desarrollador web Fullstack con 4 años de pasión por la
+      programación. Graduado en Ingeniería de Sistemas, he desarrollado
+      proyectos personales y universitarios que fortalecieron mi enfoque
+      práctico y creativo. Soy productivo, adaptable y siempre estoy listo para
+      asumir nuevos retos y seguir aprendiendo.
+    </p>
+    <div class="mt-10 flex w-full justify-start">
+      <a
+        href="https://drive.google.com/file/d/1YxsFRl9ngMNnqXYPID1M9XNweiXYzIBm/view?usp=sharing"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="mr-6 flex h-12 w-52 items-center justify-center gap-2 rounded-full bg-blue-400 font-bold transition-all hover:bg-blue-500"
+        >Ver currículum</a
+      >
+      <a
+        href="/about"
+        class="flex h-12 w-52 items-center justify-center gap-2 rounded-full border-[1px] border-blue-400 transition-all hover:bg-blue-400"
+      >
+        Acerca de mí
+        <svg
+          class="h-6text-white w-6"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M19 12H5m14 0-4 4m4-4-4-4"></path>
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>

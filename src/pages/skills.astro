@@ -1,72 +1,74 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 
 //Imagenes
-import git from '../assets/skills/git.png';
-import html from '../assets/skills/html.png';
-import css from '../assets/skills/css.png';
-import javascript from '../assets/skills/javascript.png';
-import typescript from '../assets/skills/typescript.svg';
-import react from '../assets/skills/react.png';
-import reactNative from '../assets/skills/react-native.png';
-import vue from '../assets/skills/vue.png';
-import tailwind from '../assets/skills/tailwind.svg';
-import node from '../assets/skills/node.png';
-import java from '../assets/skills/java.svg';
-import expressjs from '../assets/skills/expressjs.svg';
-import nest from '../assets/skills/nest.svg';
-import laravel from '../assets/skills/laravel.svg';
-import springBoot from '../assets/skills/spring-boot.svg';
-import graphql from '../assets/skills/graphql.svg';
-import mongodb from '../assets/skills/mongodb.svg';
-import mysql from '../assets/skills/mysql.svg';
-import postgresql from '../assets/skills/postgresql.svg';
-import socketio from '../assets/skills/socketio.svg';
+import git from "../assets/skills/git.png";
+import html from "../assets/skills/html.png";
+import css from "../assets/skills/css.png";
+import javascript from "../assets/skills/javascript.png";
+import typescript from "../assets/skills/typescript.svg";
+import react from "../assets/skills/react.png";
+import reactNative from "../assets/skills/react-native.png";
+import vue from "../assets/skills/vue.png";
+import tailwind from "../assets/skills/tailwind.svg";
+import node from "../assets/skills/node.png";
+import java from "../assets/skills/java.svg";
+import expressjs from "../assets/skills/expressjs.svg";
+import nest from "../assets/skills/nest.svg";
+import laravel from "../assets/skills/laravel.svg";
+import springBoot from "../assets/skills/spring-boot.svg";
+import graphql from "../assets/skills/graphql.svg";
+import mongodb from "../assets/skills/mongodb.svg";
+import mysql from "../assets/skills/mysql.svg";
+import postgresql from "../assets/skills/postgresql.svg";
+import socketio from "../assets/skills/socketio.svg";
 
 const skills = [
-  { name: 'Git', img: git, category: 'Tools' },
-  { name: 'HTML', img: html, category: 'Frontend' },
-  { name: 'CSS', img: css, category: 'Frontend' },
-  { name: 'JavaScript', img: javascript, category: 'Frontend' },
-  { name: 'TypeScript', img: typescript, category: 'Frontend' },
-  { name: 'React', img: react, category: 'Frontend' },
-  { name: 'React Native', img: reactNative, category: 'Mobile' },
-  { name: 'Vue.js', img: vue, category: 'Frontend' },
-  { name: 'Tailwind CSS', img: tailwind, category: 'Frontend' },
-  { name: 'Node.js', img: node, category: 'Backend' },
-  { name: 'Java', img: java, category: 'Backend' },
-  { name: 'Express.js', img: expressjs, category: 'Backend' },
-  { name: 'NestJS', img: nest, category: 'Backend' },
-  { name: 'Laravel', img: laravel, category: 'Backend' },
-  { name: 'SpringBoot', img: springBoot, category: 'Backend' },
-  { name: 'GraphQL', img: graphql, category: 'Backend' },
-  { name: 'MongoDB', img: mongodb, category: 'Database' },
-  { name: 'MySQL', img: mysql, category: 'Database' },
-  { name: 'PostgreSQL', img: postgresql, category: 'Database' },
-  { name: 'Socket.IO', img: socketio, category: 'Backend' },
+  { name: "Git", img: git, category: "Tools" },
+  { name: "HTML", img: html, category: "Frontend" },
+  { name: "CSS", img: css, category: "Frontend" },
+  { name: "JavaScript", img: javascript, category: "Frontend" },
+  { name: "TypeScript", img: typescript, category: "Frontend" },
+  { name: "React", img: react, category: "Frontend" },
+  { name: "React Native", img: reactNative, category: "Mobile" },
+  { name: "Vue.js", img: vue, category: "Frontend" },
+  { name: "Tailwind CSS", img: tailwind, category: "Frontend" },
+  { name: "Node.js", img: node, category: "Backend" },
+  { name: "Java", img: java, category: "Backend" },
+  { name: "Express.js", img: expressjs, category: "Backend" },
+  { name: "NestJS", img: nest, category: "Backend" },
+  { name: "Laravel", img: laravel, category: "Backend" },
+  { name: "SpringBoot", img: springBoot, category: "Backend" },
+  { name: "GraphQL", img: graphql, category: "Backend" },
+  { name: "MongoDB", img: mongodb, category: "Database" },
+  { name: "MySQL", img: mysql, category: "Database" },
+  { name: "PostgreSQL", img: postgresql, category: "Database" },
+  { name: "Socket.IO", img: socketio, category: "Backend" },
 ];
 ---
 
 <Layout title="Habilidades :)">
-  <div class="relative min-h-screen flex flex-col items-center pb-20">
-    <div class="w-[60%] h-[10%] mt-32 mb-16 flex justify-center">
+  <div class="relative flex min-h-screen flex-col items-center pb-20">
+    <div class="mb-16 mt-32 flex h-[10%] w-[60%] justify-center">
       <h4 class="text-6xl font-extrabold">
         MIS <span class="text-blue-400">HABILIDADES</span>
       </h4>
     </div>
-    <div class="w-[75%] z-[20] mb-20">
-      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8">
+    <div class="z-[20] mb-20 w-[90%] md:w-[75%]">
+      <div
+        class="grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-8 lg:grid-cols-4 xl:grid-cols-5"
+      >
         {
           skills.map((skill) => (
-            <div class="group relative bg-gray-800 rounded-2xl p-8 flex flex-col items-center justify-center gap-4 hover:bg-gray-700 transition-all duration-300 hover:scale-105 border border-gray-700 hover:border-blue-400">
-              <div class="w-20 h-20 flex items-center justify-center">
+            <div class="group relative flex flex-col items-center justify-center gap-4 rounded-2xl border border-gray-700 bg-gray-800 p-8 transition-all duration-300 hover:scale-105 hover:border-blue-400 hover:bg-gray-700">
+              <div class="flex h-14 w-14 items-center justify-center md:h-20 md:w-20">
                 <img
                   src={skill.img.src}
                   alt={skill.name}
-                  class="w-full h-full object-contain transition-transform duration-300 group-hover:scale-110"
+                  class="h-full w-full object-contain transition-transform duration-300 group-hover:scale-110"
                 />
               </div>
-              <h5 class="text-lg font-semibold text-center group-hover:text-blue-400 transition-colors">
+              <h5 class="text-center text-lg font-semibold transition-colors group-hover:text-blue-400">
                 {skill.name}
               </h5>
               <span class="text-xs text-gray-400 group-hover:text-gray-300">

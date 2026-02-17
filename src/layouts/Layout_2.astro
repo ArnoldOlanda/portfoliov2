@@ -1,6 +1,6 @@
 ---
-import { ViewTransitions } from 'astro:transitions';
-import Nav from '../components/Nav.astro';
+import { ViewTransitions } from "astro:transitions";
+import Nav from "../components/Nav.astro";
 interface Props {
   title: string;
 }
@@ -22,7 +22,9 @@ const { title } = Astro.props;
   <body>
     <Nav transition:persist />
     <main>
-      <div class="h-full hidden md:block md:w-[20%] bg-blue-600 polygon fixed top-0 left-0">
+      <div
+        class="polygon fixed left-0 top-0 hidden h-full bg-blue-600 md:block md:w-[20%]"
+      >
       </div>
       <slot />
     </main>
